@@ -1,0 +1,82 @@
+/** {
+  box-sizing: border-box; why does this cause header to break
+}*/
+
+/*footer*/
+footer {
+  text-align: center;
+  border-top: solid 1px #a6a39f;
+}
+
+footer #contact-info {
+  float: left;
+  padding-right: 1.5em;
+}
+
+/* General Purpose Styles */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+body
+{
+  margin:0;
+  font-family: 'Source Sans Pro', Arial, sans;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header styles*/
+header nav {
+  float: right;
+  font: 700 1.4rem Calibri, Arial, sans-serif;
+  padding: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+header h1 {
+  float: left;
+  text-transform: uppercase;
+  font: 900 2rem Source Sans Pro, Arial, sans-serif;
+  line-height: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+header {
+  background-color: #E74C3C;
+  margin: 0 auto;
+  min-height: 100px;
+  color: white;
+  padding: 10px;
+}
+
+/*newsletter*/
+#newsletter {
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+#newsletter p {
+  margin: 0 auto;
+  font-size: 1rem
+}
+
+#newsletter-email {
+  width: 75%;
+}
+
+#newsletter [class*="btn-"] {
+  width: 20%;
+}
