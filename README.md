@@ -1,27 +1,71 @@
-# HackBU
+hackitmac.github.io
+===================
+The github page for the hackitmac website
 
-A student-run organization at Binghamton University created to foster a community of individuals who solve problems through the innovative use of technology.
 
-## Install
+##Setup Instructions for Mac
+You can also look at [https://help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages) for more info on github pages.
 
-In addition to cloning the HackBU repository, you'll need a few things to run HackBU locally:
+Get this repo
+```
+git clone https://github.com/hackitmac/hackitmac.github.io.git
+````
 
-1. **Ruby** - Jekyll requires Ruby. If you're on a Mac, you most likely have Ruby. You can confirm this by running `ruby --version` in the command line. Follow [these instructions](https://www.ruby-lang.org/en/downloads/) to install Ruby if needed.
+Open up a terminal in this folder. Run this command in terminal in the folder to check ruby version of folder. You'll get the global ruby most likely the system ruby that came with mac. Something like this
+```
+$ ruby -v
+ruby 2.0.0p451 (2014-02-24 revision 45167) [universal.x86_64-darwin13]
+```
 
-2. **Bundler** - Bundler is a package manager that makes versioning Ruby software like Jekyll a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bunder installed, you can install it by running the command `gem install bundler`.
+###Install Homebrew
+The package manager for mac. [http://brew.sh/](http://brew.sh/)  
+Run this to install brew
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
 
-3. **Jekyll** - Run the command `bundle install` in the project directory to download and install Jekyll. (Try using `sudo bundle install` if you run into problems.)
+###Install rbenv
+```
+brew install rbenv
+```
+Use rbenv to install latest ruby version
+```
+rbenv install 2.1.2
+```
+Use rbenv to set the local ruby version to `ruby 2.1.2`
+```
+rbenv local 2.1.2
+```
+rbenv rehash to make sure things are set properly
+```
+rbenv rehash
+```
+Now if you do `ruby -v` in your local directory folder for this repo.
+```
+$ruby -v
+ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin13.0]
+```
 
-You can start the Jekyll server with `bundle exec jekyll serve --watch`. See the [Jekyll documentation ](http://jekyllrb.com/docs/home/) for more information.
+###Install bundler
+Bundler lets you easily manage dependencies for gems [http://bundler.io/](http://bundler.io/).
 
-## Contributing
+```
+$ gem install bundler
+```
 
-Making a change to the website? Fork the repository (if you're not HackBU staff) and [submit a pull request through GitHub](https://help.github.com/articles/using-pull-requests)!
+###Install Dependencies for this project
+There is already a Gemfile in this repo specifying that you want the github-pages which includes jekyll and various other things that the github pages system uses to run your site.
+```
+source 'https://rubygems.org'
+gem 'github-pages'
+```
 
-A HackBU staff member will review the pull request, leave comments, and decide whether or not to merge.
+So all you have to do is run `bundle install`
 
-## License
+###Start using jekyll
+```
+bundle exec jekyll serve --watch
+```
+Navigate to `http://localhost:4000`
 
-The contents of this repository are [released under the MIT License](http://hackbu.org/LICENSE).
-
-Contact [hello@hackbu.org](mailto:hello@hackbu.org) with questions.
+---------------------
