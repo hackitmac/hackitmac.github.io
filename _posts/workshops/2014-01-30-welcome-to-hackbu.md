@@ -1,9 +1,9 @@
 ---
 layout: notes
 
-title: Welcome to HackBU
-description: Learn about HackBU and the topics we will cover. We’ll explain the difference between HTML, CSS, JavaScript, Ruby, and front-end vs. back-end development with an interactive demo.
-slides: https://speakerdeck.com/hackbinghamton/welcome-to-hackbu
+title: Welcome to hackitmac
+description: Learn about hackitmac and the topics we will cover. We’ll explain the difference between HTML, CSS, JavaScript, Ruby, and front-end vs. back-end development with an interactive demo.
+slides: https://speakerdeck.com/hackbinghamton/welcome-to-hackitmac
 video: <iframe width="100%" height="385" src="//www.youtube.com/embed/hcBtrXqlO5o?rel=0" frameborder="0" allowfullscreen></iframe>
 time: Jan. 30 at 8 p.m.
 location: LH 14
@@ -11,11 +11,11 @@ semester: Spring
 week: 0
 
 date: '2014-01-30T20:00:00-05:00'
-permalink: /workshops/2014/spring/welcome-to-hackbu/
+permalink: /workshops/2014/spring/welcome-to-hackitmac/
 ---
 
 ## Parts of the Web
-Let’s kick off HackBU by diving into short lesson about the Internet and how it works.
+Let’s kick off hackitmac by diving into short lesson about the Internet and how it works.
 
 ### IP Addresses
 Every computer connected to the Internet has an **IP address**. An IP address is a unique address that specifies where your computer is located in the network. There are different formats for specifying IP addresses, but the most common right now is IPv4 (which you’ve likely seen). IPv4 addresses consist of four sets of numbers (ranging from 0-255, inclusive), separated by periods (`192.168.2.1`, for example).
@@ -43,7 +43,7 @@ When you visit Google, a few things happen:
 It’s like ordering take-out food: you make the request, and everything is assembled, prepared, and delivered to you.
 
 ## Languages We’ll Be Covering
-The weekly HackBU workshops will cover the basics of web development, and slowly progress to more advanced topics. Here’s a quick overview of these topics:
+The weekly hackitmac workshops will cover the basics of web development, and slowly progress to more advanced topics. Here’s a quick overview of these topics:
 
 ### HTML
 HTML is the language we use to add structure to our website. It defines the content of a web page, and how that web page should be laid out (roughly speaking). When you connect to a website, the website returns an HTML document which your browser then reads, parses, and renders to display to you.
@@ -108,7 +108,7 @@ Photoshop is an example of a closed-source project. Adobe hasn’t released the 
 
 WordPress and Mozilla, on the other hand, are two open source projects. They rely on a community of programmers with a desire to contribute to a meaningful product.
 
-[GitHub](https://github.com/) is a large platform that combines open source and social networking. Developers can publicly share source code, allowing contributors to view it, copy it (known as forking), make changes, and submit them to the original creator. Our own site, [HackBU](https://github.com/HackBinghamton/HackBU), is an open-source project hosted on GitHub.
+[GitHub](https://github.com/) is a large platform that combines open source and social networking. Developers can publicly share source code, allowing contributors to view it, copy it (known as forking), make changes, and submit them to the original creator. Our own site, [hackitmac](https://github.com/HackBinghamton/hackitmac), is an open-source project hosted on GitHub.
 
 ### Front-End Development vs. Back-End Development
 Dynamic websites can be broken into two parts: the front-end and back-end.
@@ -126,7 +126,7 @@ Responsive websites adapt to the width of the browser. They look great on *any* 
 * **Flexible images and media** — images and media should resize to fit in the layout.
 * **Media queries** — a (relatively new) feature in CSS that lets you change the page’s style depending on width of the browser.
 
-The [HackBU website](http://hackbu.org/) is responsive. Take a look at the website on your computer, then on your phone or tablet to see the difference! It’s the same content, but displayed in a way that’s more aware of the device you’re using.
+The [hackitmac website](http://hackitmac.org/) is responsive. Take a look at the website on your computer, then on your phone or tablet to see the difference! It’s the same content, but displayed in a way that’s more aware of the device you’re using.
 
 ## Hackathons
 Hackathons are events where a bunch of "hackers" come together in teams with the intention of creating the best type of program (i.e. web app, iPhone app, etc) or hardware within a certain period of time. Most hackathons last between 24-48 hours and are full of caffeine, food, prizes, and little sleep.
