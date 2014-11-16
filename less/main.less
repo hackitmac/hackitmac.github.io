@@ -101,11 +101,11 @@ html {
 }
 
 body {
-	background-color: #fafafa;
+	background-color: #D6CCAD;
 }
 
 a {
-	color: #54795b;
+	color: #D6655A;
 }
 
 abbr {
@@ -113,7 +113,7 @@ abbr {
 }
 
 table {
-	background: #fff;
+	background: #D6CCAD;
 	display: block;
 	margin-bottom: 1em;
 	margin-top: 1em;
@@ -172,8 +172,8 @@ th, td {
 	}
 }
 
-.hackitmac-green {
-	color: lighten(@green, 5%);
+.hackitmac-color {
+	color: #D6655A;
 }
 
 .fb-like-thin {
@@ -220,12 +220,12 @@ th, td {
 	font-weight: 600;
 
 	a {
-		color: #7a858f;
+		color: #74A588;
 		transition: color 0.1s ease-in;
 		text-decoration: none;
 
 		&:hover {
-			color: #a2b0bf;
+			color: #9ADBB5;
 		}
 	}
 }
@@ -244,12 +244,13 @@ th, td {
 /*=== Sidebar ===*/
 /*===============*/
 
-@sidebar-link-color: #f0f0f0;
+@sidebar-link-color: #D6CCAD;
 @sidebar-left-padding: 1.3em;
 @sidebar-width: 18.750em;
 
 .sidebar {
-	background: url('../img/sidebar-bg.png') no-repeat center center;
+	/*background: url('../img/sidebar-bg.png') no-repeat center center;*/
+	background-color:#42282F;
 	background-size: cover;
 	box-shadow: inset -5px 0 0 0 rgba(0, 0, 0, 0.1);
 	bottom: 0;
@@ -291,13 +292,13 @@ th, td {
 
 .sidebar-credit {
 	bottom: 0;
-	color: #425A63;
+	color: @sidebar-link-color;
 	font-size: 0.688em;
 	padding: 0 @sidebar-left-padding;
 	position: absolute;
 
 	a {
-		color: #425A63;
+		color: @sidebar-link-color;
 		display: block;
 		text-decoration: none;
 	}
