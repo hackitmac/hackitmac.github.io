@@ -126,7 +126,7 @@ Responsive websites adapt to the width of the browser. They look great on *any* 
 * **Flexible images and media** — images and media should resize to fit in the layout.
 * **Media queries** — a (relatively new) feature in CSS that lets you change the page’s style depending on width of the browser.
 
-The [hackitmac website](http://hackitmac.org/) is responsive. Take a look at the website on your computer, then on your phone or tablet to see the difference! It’s the same content, but displayed in a way that’s more aware of the device you’re using.
+The [hackitmac website](http://hackitmac.com/) is responsive. Take a look at the website on your computer, then on your phone or tablet to see the difference! It’s the same content, but displayed in a way that’s more aware of the device you’re using.
 
 ## Hackathons
 Hackathons are events where a bunch of "hackers" come together in teams with the intention of creating the best type of program (i.e. web app, iPhone app, etc) or hardware within a certain period of time. Most hackathons last between 24-48 hours and are full of caffeine, food, prizes, and little sleep.
