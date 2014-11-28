@@ -1,10 +1,8 @@
-title: 'hackitmac - Binghamton University'
-description: 'hackitmac is a club at Binghamton University created to foster a community of individuals who solve problems through the innovative use of technology.'
+title: 'hackitmac - McMaster University'
+description: 'hackitmac is a club at McMaster University created to foster a community of individuals who solve problems through the innovative use of technology.'
 og_site_name: 'hackitmac'
 og_title: 'hackitmac - Spring 2014'
 og_image: 'http://hackitmac.org/img/hackitmac.png'
-fb_admins: 1352160452
-fb_app_id: 737007022995217
 root: 'http://hackitmac.org'
 safe: true
 lsi: false
