@@ -16,15 +16,18 @@
 		<li {% if page.url == '/hackathons/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
 			<a href="/hackathons/">Hackathons</a>
 		</li>
-		<li {% if page.url == '/sponsors/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
-			<a href="/sponsors/">Sponsors</a>
-		</li>
 		<li {% if page.url == '/resources/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
 			<a href="/resources/">Resources</a>
+		</li>
+		<li {% if page.url == 'http://deltahacks.com' %}class="sidebar-navigation-active navigation-active"{% endif %}>
+			<a href="/sponsors/">Deltahacks 2016</a>
 		</li>
 	</ul>
 
 	<p class="sidebar-credit">
+		<li {% if page.url == '/sponsors/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
+			<a href="/sponsors/">Sponsors</a>
+		</li>
 		<a href="https://github.com/hackitmac" title="Contribute to the hackitmac website">Fork us on GitHub!</a>
 	</p>
 </div>
