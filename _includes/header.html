@@ -13,17 +13,28 @@
 	</h1>
 
 	<ul class="header-navigation navigation">
-		<li {% if page.url == '/events/index.html' %}class="navigation-active"{% endif %}>
-			<a href="/events/">Events</a>
-		</li>
+		
 		<li {% if page.url == '/hackathons/index.html' %}class="navigation-active"{% endif %}>
 			<a href="/hackathons/">Hackathons</a>
 		</li>
-				<li {% if page.url == '/sponsors/index.html' %}class="navigation-active"{% endif %}>
-			<a href="/sponsors/">Sponsors</a>
+
+		<li {% if page.url == '/events/index.html' %}class="navigation-active"{% endif %}>
+			<a href="/events/">Upcoming Events</a>
 		</li>
+
 		<li {% if page.url == '/resources/index.html' %}class="navigation-active"{% endif %}>
-			<a href="/resources/">Resources</a>
+			<a href="/resources/">Useful Resources</a>
+		</li>
+
+		<li {% if page.url == "http://medium.com/hackitmac-blog" %}class="navigation-active"{% endif %}>
+			<a href="http://medium.com/hackitmac-blog">Our Blog</a>
+		</li>
+
+		<li {% if page.url == "http://deltahacks.com" %}class="navigation-active"{% endif %}>
+			<a href="http://deltahacks.com">Deltahacks 2016</a>
+
+		<li {% if page.url == '/sponsors/index.html' %}class="navigation-active"{% endif %}>
+			<a href="/sponsors/">Sponsors</a>
 		</li>
 	</ul>
 </header>

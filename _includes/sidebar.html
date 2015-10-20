@@ -7,9 +7,9 @@
 	</header>
 
 	<ul class="sidebar-navigation navigation">
-		<li {% if page.url == '/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
+		<!-- <li {% if page.url == '/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
 			<a href="/">Home</a>
-		</li>
+		</li> -->
 
 		<li {% if page.url == '/hackathons/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
 			<a href="/hackathons/">Hackathons</a>
@@ -19,12 +19,12 @@
 			<a href="/events/">Upcoming Events</a>
 		</li>
 
-		<li {% if page.url == "http://medium.com/hackitmac-blog" %}class="sidebar-navigation-active navigation-active"{% endif %}>
-			<a href="http://medium.com/hackitmac-blog">Our Blog</a>
-		</li>
-
 		<li {% if page.url == '/resources/index.html' %}class="sidebar-navigation-active navigation-active"{% endif %}>
 			<a href="/resources/">Useful Resources</a>
+		</li>
+
+		<li {% if page.url == "http://medium.com/hackitmac-blog" %}class="sidebar-navigation-active navigation-active"{% endif %}>
+			<a href="http://medium.com/hackitmac-blog">Our Blog</a>
 		</li>
 
 		<li {% if page.url == "http://deltahacks.com" %}class="sidebar-navigation-active navigation-active"{% endif %}>
@@ -37,13 +37,9 @@
 			<a href="/sponsors/">Sponsors</a>
 		</li> -->
 
-		<a href="https://github.com/hackitmac" title="Contribute to the hackitmac website">Fork us on GitHub!
-		</a>
-		<a href="https://www.facebook.com/groups/hackitmac" title="This is our Facebook Community">Join us on Facebook!
-		</a>
-		<a href="http://twitter.com/hackitmac" title="Tweet to us">Follow us on Twiter!
-		</a>
-		<a href="https://youtube.com/hackitmac" title="Check out our videos">Check out our YouTube Channel!
-		</a>
+		<a href="https://github.com/hackitmac" title="Contribute to the hackitmac website"><i class="fa fa-code-fork"></i>Fork us on GitHub!</a>
+		<a href="https://www.facebook.com/groups/hackitmac" title="This is our Facebook Community"><i class="fa fa-facebook-square"></i>Join us on Facebook!</a>
+		<a href="http://twitter.com/hackitmac" title="Tweet to us"><i class="fa fa-twitter-square"></i>Follow us on Twiter!</a>
+		<a href="https://youtube.com/hackitmac" title="Check out our videos"><i class="fa fa-youtube-square"></i>Check out our YouTube Channel!</a>
 	</p>
 </div>
