@@ -1,43 +1,95 @@
----
-title: hackitmac - McMaster University
-layout: default
----
+<html ng-app="PhaseOne">
+<head>
+    <base href="/"/>
+    <link href="style.css" rel="stylesheet">
+    <link href="style.mobile.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon32.png" sizes="32x32" type="images/png"/>
+    <link rel="icon" href="images/favicon-256.png" sizes="256x256" type="images/png"/>
+    <link rel="icon" href="images/faveicon.svg" sizes="any" type="images/svg+xml"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="js/main.js"></script>    
+    <script src="js/slideshow.js"></script>
+    <script src="js/calendar.js"></script>
+</head>
 
-<div class="article article-introduction">
-	<h2>Let's Code!</h2>
-	<p>HackitMac is a student club at McMaster University for those who are interested in learning, building, and experiencing with different cool technologies. We are your friendly and "kinda-geeky" student tech club on campus. We hold weekly <a href="/workshops/">workshops</a> that introduce and teach you to coding, and we organize trips to <a href="/hackathons/">HACKATHONS</a> all around Canada and the U.S.</p>
-	<p>We also organize our very own hackathon <a href="http://deltahacks.com">Deltahacks</a> every year.</p>
+<body ng-controller="SiteController" ng-data-init="location=''">
+    <background ng-class="state">
+        <table>
+            <tr>
+                <td style="animation-delay: 1s;background-image:url('images/lp_1.jpg')"></td>
+                <td style="animation-delay: 9.75s;background-image:url('images/lp_2.jpg')"></td>
+                <td style="animation-delay: 13s;background-image:url('images/lp_3.jpg')"></td>
+            </tr>
+            <tr>
+                <td style="animation-delay: 6.5s;background-image:url('images/lp_4.jpg')"></td>
+                <td style="animation-delay: 16.25s;background-image:url('images/lp_5.jpg')"></td>
+                <td style="animation-delay: 22.75s;background-image:url('images/lp_6.jpg')"></td>
+            </tr>
+            <tr>
+                <td style="animation-delay: 3.25s;background-image:url('images/lp_7.jpg')"></td>
+                <td style="animation-delay: 26s;background-image:url('images/lp_8.jpg')"></td>
+                <td style="animation-delay: 19.5s;background-image:url('images/lp_9.jpg')"></td>
+            </tr>
+        </table>
+        <div>
+            <img style="animation-delay: 1s; width: 30%;bottom: 20%; left: 0" class="bar" src="images/bar-0_on_white.svg" />
+            <img style="animation-delay: 6s; width: 18%;right: 20%; top: 10%" class="bar" src="images/bar-1_on_white.svg" />
+            <img style="animation-delay: 3s; width: 25%;left: 0; top: 0" class="bar" src="images/bar-2_on_white.svg" />
+            <img style="animation-delay: 2s; width: 25%;bottom: 0; right: 0" class="bar" src="images/bar-3_on_white.svg" />
+        </div>
+    </background>
+    <content>
+        <!-- NAVIGATION --> 
+        <nav ng-class="state">
+            <img id="logo" src="images/phaseone-text.png" />
+            <ul>
+                <li ng-click="state='main'"><a href="home" ng-click="navigate(0)"><div>Home</div><div class="under-bar" ></div></a></li>
+                <li ng-click="state='main'"><a href="about" ng-click="navigate(1)"><div>About</div><div class="under-bar"></div></a></li>
+                <li ng-click="state='main'"><a href="resources" ng-click="navigate(2)"><div>Resources</div><div class="under-bar"></div></a></li>
+                <li ng-click="state='main'"><a href="events" ng-click="navigate(3)"><div>Events</div><div class="under-bar"></div></a></li>
+            </ul>
+        </nav>
+        <!-- CONTENT --> 
+        <div class="ng-view"></div>
+        <!-- FOOTER --> 
+        <div id="footer" ng-class="state">
+            <div>
+                <a href="https://www.snapchat.com/add/itsphaseone">
+                    <img src="images/social/Snapchat-black.svg" />
+                    <p>itsphaseone</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/phaseone_insta">
+                    <img src="images/social/Instagram-black.svg" />
+                    <p>phaseone_insta</p>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/Groups/Phase0ne">
+                    <img src="images/social/Facebook-black.svg" />
+                    <p>/Groups/Phase0ne</p>
+                </a>
+            </div>
+            <div>
+                <a href="https:///www.medium.com/@Phaseone">
+                    <img src="images/social/Medium-black.svg" />
+                    <p>@Phaseone</p>
+                </a>
+            </div>
+            <div>
+                <a href="mailto:hello@phaseone.io">
+                    <p style="float:none;">hello@phaseone.io</p>
+                </a>
+            </div>
+            <div>                
+                <p style="float:none;">PhaseOne 2017</p>
+            </div>
+        </div>
+    </content>
+</body>
 
-</div>
-
-<div class="article">
-	<h2 class="article-title">But I don't know how to code ... </h2>
-	<p>So? It will literally take you about 10 mins to have a beautiful website up and running - and we can show you how! The whole point of this community is to go around and experiement and build using all the cool tech we read about at companies like Google and NASA.</p>
-	<p>If you have an affinty to learning new things then you will fit in perfectly with the hackathon culture :)</p>
-
-	<p>P.S. if you're eager to have an early start, take a look at our <a href="/resources/">resources page</a> it's a great place to start.</p>
-</div>
-
-<div class="article">
-	<h3 class="article-title">So what is "Hacking", "Hackathon" ...?!</h3>
-	<p>A Hackathon is an event where many different groups of individuals come together for 24-36 hours to build on whatever they please. Hackathons may have themes or be a free for all coding, and sponsors may also place their own twist on what you can do. A hackathon is about innovation and having fun, so theres no need to be going to a hackthon expecting to be glued to your laptop for the whole time, it's part networking, part having serious fun, part serious coding, and a big part is filling up your swag bag to the fullest. And if this explanation isn't enought to convience you, then <a href="https://www.youtube.com/watch?v=m4cTd1WbX1o">check out this video from MHacks</a> to see how fun hackathons are</p>
-
-	<!--
-	<p>Hackers will hack, and busing the hackers to the events will be left up to HackItMac, a list of hackathons that HackItMac is participating in is listed <a href="/hackathons/">HERE</a> so <a href="http://hackitmac.us8.list-manage.com/subscribe?u=b39abc3012380d4819ccf3750&amp;id=b127ba37b0" target="_blank">join our mailing list</a> to stay posted with all the ones we're going to.</p>-->
-</div>
-
-<div class="article">
-	<h3 class="article-title">Workshops? WORKSHOPS!</h3>
-	<p>We have got lovely volunteers at HackitMac who hold <a href="/events/">weekly workshops</a> on campus to teach what you cool stuff like how to build websites. Come check it out, it will be a ton of fun (pinky promise!).</p>
-</div>
-
-	<h3>Join our mailing list</h3>
-	<form action="http://hackitmac.us8.list-manage.com/subscribe?u=b39abc3012380d4819ccf3750&amp;id=b127ba37b0" method="POST" class="article-introduction-form clearfix">
-		<input type="email" class="article-introduction-form-email" id="newsletter-email" placeholder="yourname@awesome.com" name="MERGE0" required="required">
-		<input type="submit" class="article-introduction-form-submit" value="Submit">
-	</form>
-
-<div class="article">
-	<h3 class="article-title">Questions? Or just want to talk to us</h3>
-	<p>Message us at <a href="mailto:hello@hackitmac.com">hello@hackitmac.com</a>, and <a href="https://www.facebook.com/groups/hackitmac" title="Hackitmac Facebook Group">join our group on Facebook</a> to stay involved with the rest of our +1000 community members.</p>
-</div>
+</html>

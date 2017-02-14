@@ -1,0 +1,20 @@
+[
+	{
+		"title":"Welcome",
+		"content":"Welcome to the PhaseOne website!",
+		"url":null,
+		"image":"about_slide.jpg"
+	},
+	{
+		"title":"Resources",
+		"content":"Check out our resources page!",
+		"url":"/resources",
+		"image":"resources.jpg"
+	},
+	{
+		"title":"Events",
+		"content":"We've got things going on!",
+		"url":"/events",
+		"image":"about_slide.jpg"
+	}
+]

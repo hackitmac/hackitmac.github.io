@@ -1,0 +1,41 @@
+@media screen and (max-width:1000px){
+
+	section img.side-image{
+		display: none;
+	}
+
+	text.right-pad, text.left-pad{
+		padding: 0;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	p{
+		font-size: 0.8em;
+	}
+
+	.blind, .item, #events-section td{
+		font-size: 200%;
+	}
+	#events-section td img{
+		width: 100%;		
+	}
+	#events-section td{
+		padding: 20px;	
+		text-align: right;	
+	}
+	
+	#footer p{
+		display: none;
+	}
+	#footer div:nth-last-child(1) p, #footer div:nth-last-child(2) p{
+		display: initial;
+	}
+
+
+}
