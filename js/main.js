@@ -4,16 +4,16 @@ app.config(function ($routeProvider,$locationProvider) {
 		.when("/", {
 			templateUrl: "./views/empty.html"
 		})
-		.when("./home", {
+		.when("/home", {
 			templateUrl: "./views/home.html"					
 		})
-		.when("./about", {
+		.when("/about", {
 			templateUrl: "./views/about.html"
 		})
-		.when("./resources", {
+		.when("/resources", {
 			templateUrl: "./views/resources.html"
 		})
-		.when("./events", {
+		.when("/events", {
 			templateUrl: "./views/events.html"
 		});
 	$locationProvider.html5Mode(true);
