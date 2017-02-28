@@ -388,22 +388,22 @@ div#dialog button{
     cursor: pointer;
 }
 .blinds-container .blind:nth-child(1){    
-    background-image:url('images/workshops_blind.png');        
+    background-image:url('./images/workshops_blind.png');        
 }
 .blinds-container .blind:nth-child(1):hover{    
-    background-image:url('images/workshops_blind_hover.png');        
+    background-image:url('./images/workshops_blind_hover.png');        
 }
 .blinds-container .blind:nth-child(2){    
-    background-image:url('images/tools_blind.png');        
+    background-image:url('./images/tools_blind.png');        
 }
 .blinds-container .blind:nth-child(2):hover{    
-    background-image:url('images/tools_blind_hover.png');        
+    background-image:url('./images/tools_blind_hover.png');        
 }
 .blinds-container .blind:nth-child(3){    
-    background-image:url('images/mentors_blind.png');        
+    background-image:url('./images/mentors_blind.png');        
 }
 .blinds-container .blind:nth-child(3):hover{    
-    background-image:url('images/mentors_blind_hover.png');        
+    background-image:url('./images/mentors_blind_hover.png');        
 }
 
 #calendar-month{
