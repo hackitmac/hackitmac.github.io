@@ -1,50 +1,50 @@
 <html ng-app="PhaseOne">
 <head>
     <base href="/"/>
-    <link href="style.css" rel="stylesheet">
-    <link href="style.mobile.css" rel="stylesheet">
-    <link rel="icon" href="images/favicon32.png" sizes="32x32" type="images/png"/>
-    <link rel="icon" href="images/favicon-256.png" sizes="256x256" type="images/png"/>
-    <link rel="icon" href="images/faveicon.svg" sizes="any" type="images/svg+xml"/>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./style.mobile.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon32.png" sizes="32x32" type="images/png"/>
+    <link rel="icon" href="./images/favicon-256.png" sizes="256x256" type="images/png"/>
+    <link rel="icon" href="./images/faveicon.svg" sizes="any" type="images/svg+xml"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
-    <script src="js/main.js"></script>    
-    <script src="js/slideshow.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="./js/main.js"></script>    
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/calendar.js"></script>
 </head>
 
 <body ng-controller="SiteController" ng-data-init="location=''">
     <background ng-class="state">
         <table>
             <tr>
-                <td style="animation-delay: 1s;background-image:url('images/lp_1.jpg')"></td>
-                <td style="animation-delay: 9.75s;background-image:url('images/lp_2.jpg')"></td>
-                <td style="animation-delay: 13s;background-image:url('images/lp_3.jpg')"></td>
+                <td style="animation-delay: 1s;background-image:url('./images//lp_1.jpg')"></td>
+                <td style="animation-delay: 9.75s;background-image:url('./images//lp_2.jpg')"></td>
+                <td style="animation-delay: 13s;background-image:url('./images//lp_3.jpg')"></td>
             </tr>
             <tr>
-                <td style="animation-delay: 6.5s;background-image:url('images/lp_4.jpg')"></td>
-                <td style="animation-delay: 16.25s;background-image:url('images/lp_5.jpg')"></td>
-                <td style="animation-delay: 22.75s;background-image:url('images/lp_6.jpg')"></td>
+                <td style="animation-delay: 6.5s;background-image:url('./images//lp_4.jpg')"></td>
+                <td style="animation-delay: 16.25s;background-image:url('./images//lp_5.jpg')"></td>
+                <td style="animation-delay: 22.75s;background-image:url('./images//lp_6.jpg')"></td>
             </tr>
             <tr>
-                <td style="animation-delay: 3.25s;background-image:url('images/lp_7.jpg')"></td>
-                <td style="animation-delay: 26s;background-image:url('images/lp_8.jpg')"></td>
-                <td style="animation-delay: 19.5s;background-image:url('images/lp_9.jpg')"></td>
+                <td style="animation-delay: 3.25s;background-image:url('./images//lp_7.jpg')"></td>
+                <td style="animation-delay: 26s;background-image:url('./images//lp_8.jpg')"></td>
+                <td style="animation-delay: 19.5s;background-image:url('./images//lp_9.jpg')"></td>
             </tr>
         </table>
         <div>
-            <img style="animation-delay: 1s; width: 30%;bottom: 20%; left: 0" class="bar" src="images/bar-0_on_white.svg" />
-            <img style="animation-delay: 6s; width: 18%;right: 20%; top: 10%" class="bar" src="images/bar-1_on_white.svg" />
-            <img style="animation-delay: 3s; width: 25%;left: 0; top: 0" class="bar" src="images/bar-2_on_white.svg" />
-            <img style="animation-delay: 2s; width: 25%;bottom: 0; right: 0" class="bar" src="images/bar-3_on_white.svg" />
+            <img style="animation-delay: 1s; width: 30%;bottom: 20%; left: 0" class="bar" src="./images//bar-0_on_white.svg" />
+            <img style="animation-delay: 6s; width: 18%;right: 20%; top: 10%" class="bar" src="./images//bar-1_on_white.svg" />
+            <img style="animation-delay: 3s; width: 25%;left: 0; top: 0" class="bar" src="./images//bar-2_on_white.svg" />
+            <img style="animation-delay: 2s; width: 25%;bottom: 0; right: 0" class="bar" src="./images//bar-3_on_white.svg" />
         </div>
     </background>
     <content>
         <!-- NAVIGATION --> 
         <nav ng-class="state">
-            <img id="logo" src="images/phaseone-text.png" />
+            <img id="logo" src="./images//phaseone-text.png" />
             <ul>
                 <li ng-click="state='main'"><a href="home" ng-click="navigate(0)"><div>Home</div><div class="under-bar" ></div></a></li>
                 <li ng-click="state='main'"><a href="about" ng-click="navigate(1)"><div>About</div><div class="under-bar"></div></a></li>
@@ -58,25 +58,25 @@
         <div id="footer" ng-class="state">
             <div>
                 <a href="https://www.snapchat.com/add/itsphaseone">
-                    <img src="images/social/Snapchat-black.svg" />
+                    <img src="./images//social/Snapchat-black.svg" />
                     <p>itsphaseone</p>
                 </a>
             </div>
             <div>
                 <a href="https://www.instagram.com/phaseone_insta">
-                    <img src="images/social/Instagram-black.svg" />
+                    <img src="./images//social/Instagram-black.svg" />
                     <p>phaseone_insta</p>
                 </a>
             </div>
             <div>
                 <a href="https://www.facebook.com/Groups/Phase0ne">
-                    <img src="images/social/Facebook-black.svg" />
+                    <img src="./images//social/Facebook-black.svg" />
                     <p>/Groups/Phase0ne</p>
                 </a>
             </div>
             <div>
                 <a href="https:///www.medium.com/@Phaseone">
-                    <img src="images/social/Medium-black.svg" />
+                    <img src="./images//social/Medium-black.svg" />
                     <p>@Phaseone</p>
                 </a>
             </div>

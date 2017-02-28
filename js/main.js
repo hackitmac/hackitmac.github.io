@@ -2,26 +2,26 @@ var app = angular.module("PhaseOne", ["ngRoute"]);
 app.config(function ($routeProvider,$locationProvider) {
 	$routeProvider
 		.when("/", {
-			templateUrl: "views/empty.html"
+			templateUrl: "./views/empty.html"
 		})
 		.when("/home", {
-			templateUrl: "views/home.html"					
+			templateUrl: "./views/home.html"					
 		})
 		.when("/about", {
-			templateUrl: "views/about.html"
+			templateUrl: "./views/about.html"
 		})
 		.when("/resources", {
-			templateUrl: "views/resources.html"
+			templateUrl: "./views/resources.html"
 		})
 		.when("/events", {
-			templateUrl: "views/events.html"
+			templateUrl: "./views/events.html"
 		});
 	$locationProvider.html5Mode(true);
 });
 app.controller("SiteController", function ($scope, $location, $http) {
 	$scope.execs = [];
 
-	$http.get("js/execs.json").then(function (res) {
+	$http.get("./js/execs.json").then(function (res) {
 		$scope.execs = res.data.execs;
 	});
 
@@ -35,7 +35,7 @@ app.controller("SiteController", function ($scope, $location, $http) {
 		$("body").append("<div id='overlay'>");
 		$("body").append("<div id='dialog'>");
 		var obj = $("#dialog");
-		obj.append("<img id='side-image' src='images/" + exec.image + "'>");
+		obj.append("<img id='side-image' src='./images/" + exec.image + "'>");
 		obj.append("<h3>" + exec.name + "</h3>");
 		obj.append("<p>" + exec.bio + "</p>");
 		obj.append("<button>Close</button>");

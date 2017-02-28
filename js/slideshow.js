@@ -26,7 +26,7 @@ app.controller("SlideshowController",function($scope){
 		},500); //animate the text transition
 		
 		// set the background image and set the desired indicator to selected
-		$("#slideshow #image").css({"background-image":"url('images/"+slides[slideshowIndex]["image"]+"')"});
+		$("#slideshow #image").css({"background-image":"url('./images/"+slides[slideshowIndex]["image"]+"')"});
 		$("#slideshow #indicators div:nth-child("+(slideshowIndex+1)+")").addClass("selected");
 	};
 
