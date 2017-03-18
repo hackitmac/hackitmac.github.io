@@ -445,3 +445,8 @@ div#dialog button{
     text-decoration-style: none;
     color: black;
 }
+
+.data-table td, .data-table th{
+    padding: 10px 20px;
+    margin: 0 auto;
+}

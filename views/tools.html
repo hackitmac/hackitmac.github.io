@@ -1,0 +1,13 @@
+<zone ng-controller="ToolsController">
+	<h1>Tools</h1>
+	<p> A list of tools that can be used for learning and development purposes</p><br>
+	<table ng-table="tableParams" class="table table-condensed table-bordered table-striped data-table">
+		<tr ng-repeat="row in data">
+			<td title="'Logo'" style="text-align: center"><img height="40em" ng-src="{{row.image}}"/></td>
+			<td title="'Name'" filter="{name: 'text'}" sortable="'name'">{{row.name}}</td>			
+			<td title="'Category'" filter="{category: 'text'}" sortable="'category'">{{row.category}}</td>
+			<td title="'Description'">{{row.description}}</td>
+			<td title="'Link'"><a ng-href="{{row.link}}">{{row.link}}</a></td>			
+		</tr>
+	</table>
+</zone>
