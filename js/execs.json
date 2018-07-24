@@ -5,35 +5,35 @@
             "name": "Stephanie Koehl",
             "position": "Vice President",
             "bio": "NEED BIO",
-            "image":"graeme.jpg"
+            "image":".jpg"
         },
         {
             "index":1,
             "name": "Mitchell Pehora",
             "position": "President",
             "bio": "NEED BIO",
-            "image":"tai.jpg"
+            "image":".jpg"
         },
         {
             "index":2,
             "name":"Mebby Mengele",
             "position":"CFO",
             "bio":"NEED BIO",
-            "image":"azmain.jpg" 
+            "image":".jpg" 
         },
         {
             "index":3,
             "name":"Abhayraj Jain",
             "position":"DeltaHacks Co-Director",
             "bio":"NEED BIO",
-            "image":"azmain.jpg" 
+            "image":".jpg" 
         },
         {
             "index":4,
             "name":"Rumsha Siddiqui",
             "position":"DeltaHacks Co-Director",
             "bio":"NEED BIO",
-            "image":"azmain.jpg" 
+            "image":".jpg" 
         }
     ]
 }

@@ -21,8 +21,7 @@
 <h2>Executives</h2>
 <bin>
 	<!--style="background:url('./images/{{person.image}}');background-position:center"-->
-	<item  ng-repeat="person in execs" >
-		<!-- Removed ' ng-click="openInfoDialog(person.index)" ' tag from above until we can get new photos and bios -->
+	<item  ng-repeat="person in execs" ng-click="openInfoDialog(person.index)" >
 		<h3>{{person.name}}<br><small>{{person.position}}</small></h3>
 	</item>
 
