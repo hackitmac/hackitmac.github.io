@@ -2,23 +2,37 @@
     "execs": [
         {
             "index": 0,
-            "name": "Graeme Crawley",
+            "name": "Stephanie Koehl",
             "position": "Vice President",
-            "bio": "My job on PhaseOne is to ensure our respective teams are functioning properly and that any issues are resolved as smoothly as possible. I enjoy solving problems and working with others, and PhaseOne has made that something that I continue to love.",
+            "bio": "NEED BIO",
             "image":"graeme.jpg"
         },
         {
             "index":1,
-            "name": "Tai Rui Tong",
+            "name": "Mitchell Pehora",
             "position": "President",
-            "bio": "As the president of Phaseone, I have the great privilege of setting the vision and steering one of the most innovative clubs on campus. PhaseOne’s impact on campus over the last 3 years has been substantial in providing the necessary education and motivation for students to pursue either a hobby or career in software. PhaseOne’s goal’s from the beginning has always been the students. As the president I will lead PhaseOne to continuously pursue this endeavour of providing barrier free technology education for the students at McMaster University.",
+            "bio": "NEED BIO",
             "image":"tai.jpg"
         },
         {
             "index":2,
-            "name":"Azmain Shayakh",
+            "name":"Mebby Mengele",
             "position":"CFO",
-            "bio":"I am the Chief Financial Officer for PhaseOne and fourth year commerce student having just returned from a 12-month internship. I am very passionate about disruptive technologies that impact the advancement of human civilization. Having joined PhaseOne in 2015, I am very excited to contribute towards building PhaseOne into one of the best clubs at McMaster University.",
+            "bio":"NEED BIO",
+            "image":"azmain.jpg" 
+        },
+        {
+            "index":3,
+            "name":"Abhayraj Jain",
+            "position":"DeltaHacks Co-Director",
+            "bio":"NEED BIO",
+            "image":"azmain.jpg" 
+        },
+        {
+            "index":4,
+            "name":"Rumsha Siddiqui",
+            "position":"DeltaHacks Co-Director",
+            "bio":"NEED BIO",
             "image":"azmain.jpg" 
         }
     ]
