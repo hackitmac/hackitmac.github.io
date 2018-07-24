@@ -1,0 +1,53 @@
+{
+	"tools":[
+		{
+			"image":"https://code.visualstudio.com/images/favicon.ico",
+			"name":"Visual Studio Code",
+			"category":"IDE",
+			"description":"A light-weight extensible text editor.",
+			"link": "http://code.visualstudio.com/"
+		},
+		{
+			"image":"https://upload.wikimedia.org/wikipedia/en/4/4c/Sublime_Text_Logo.png",
+			"name":"Sublime Text",
+			"category":"IDE",
+			"description":"A light-weight extensible text editor.",
+			"link": "https://www.sublimetext.com/"
+		},
+		{
+			"image":"http://static-assets.generalassemb.ly/logos/generalassembly-open-graph.png",
+			"name":"Dash",
+			"category":"Learning - Web",
+			"description": "a fun and free online course that teaches you the basics of web development through projects you can do in your browser.",
+			"link":"https://dash.generalassemb.ly/"
+		},
+		{
+			"image":"http://htmldog.com/rAF/htmldog.png",
+			"name":"HTML Dog",
+			"category":"Learning - Web",
+			"description":"Written guides to HTML for all levels.",
+			"link":"http://htmldog.com/guides/html/"
+		},
+		{	
+			"image":"https://production.cdmycdn.com/webpack/03bea805881ba49c793495e655176173.svg",
+			"name":"Code Acadamy",
+			"category":"Learning",
+			"description":"Interactively learn to code, for free.",
+			"link":"https://www.codecademy.com/"
+		},
+		{	
+			"image":"https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png",
+			"name":"JavaScript Guide",
+			"category":"Learning - Web",
+			"description": "Comprehensive guide to JavaScript for intermediate programmers.",
+			"link":"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+		},
+		{
+			"image":"https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png",
+			"name":"W3 Schools",
+			"category":"Learning - Web",
+			"description":"A popular web site for learning web technologies such as SQL, CSS, HTML, PHP, JavaScript, AJAX, and more.",
+			"link":"https://www.w3schools.com/"
+		}
+	]
+}

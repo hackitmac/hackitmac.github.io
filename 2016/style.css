@@ -1,0 +1,452 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+background{
+    min-height: 500px;
+    min-width: 1000px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100vh;    
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    transition: opacity 1s;
+}
+background table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    transition: 1s;
+}
+background table tr{
+    height: 30%;
+    padding: 0;
+    background: white;
+}
+background table td{
+    width: 30%;
+    padding: 0;
+    border: none;
+    opacity: 0.3;
+    background-size: cover;    
+    animation-name: bg-flash;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+
+}
+background img.bar{
+    display: none;
+    opacity: 0;
+    width: 0;
+    transition: 2s;
+}
+background.main{
+    display: block;
+    position: fixed;
+    opacity: 0.5;
+}
+background.main table{
+    opacity: 0;
+}
+background.main td{
+    animation-name: none;
+}
+background.main img.bar{
+    display: block;    
+    opacity: 1;
+    position: absolute;           
+    opacity:0.2;    
+}
+@keyframes bg-flash{
+    5%{
+        opacity:0.8;
+    }
+    10.8%{
+        opacity: 0.2;
+    }
+}
+
+content{
+    color: black;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    margin-top: 20%;
+    min-width: 1000px;
+    vertical-align: middle;    
+    transition: 1s;
+    font-family: 'Futura' sans-serif;    
+}
+nav a{
+    color: initial;
+    text-decoration: none;
+}
+nav #logo{
+    display: block;    
+    width: 80%;
+    min-width: 800px;
+    margin: 0 auto;  
+    transition: width 0.5s, margin 1s;    
+}
+nav ul{
+    color: black;
+    list-style: none;    
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+    text-align: center;
+    margin: 40px;  
+    transition: float 1s, margin 1s;  
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: color 0.4s;
+    font-size: 36px;
+    text-transform: uppercase;
+    transition: font-size 1s;
+}
+
+nav ul li a{
+    color: black;   
+    transition: color 0.4s; 
+}
+nav ul li .under-bar{
+    background: black;
+    height: 5px;
+    width: 0;
+    transition: width 0.4s ease-in-out, color 0.25s;
+}
+
+nav ul li a:hover, nav ul li a.selected{
+    color: #39B1FF;
+}
+nav ul li:hover .under-bar, nav ul li a.selected .under-bar{
+    background: #39B1FF;
+    width: 100%;
+}
+
+/* Main State */
+nav.main{
+    display: block;
+    position: relative;    
+    margin-top: 0;        
+}
+nav.main #logo{
+    display: inline-block;
+    width: 15%;
+    min-width: initial;
+    margin: 30px;
+}
+
+nav.main ul{    
+    float: right;
+    margin: 25px; 
+    margin-top: 29px;       
+}
+nav.main ul li{
+    font-size: 24px;
+    margin: 0 40px;
+}
+
+.ng-view{
+    /** **/
+}
+
+#slideshow{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    height: 60%;
+    background: black;    
+    border-top: 1px solid black;
+}
+#slideshow #image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;    
+    transition: 0.5s;    
+}
+#slideshow #gradient-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,black 10%,rgba(255,255,255,0));
+    z-index: 1;
+}
+#slideshow #gradient-overlay:hover{
+    cursor: pointer;
+}
+#slideshow #indicators{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+#slideshow #indicators > *{
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#slideshow #indicators .selected{
+    background:#39B1FF;
+}
+#slideshow #text{
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    color: white;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+zone{
+    display: block;
+    padding: 10px 20%;
+    margin: 60px 0;   
+    line-height: 25px; 
+    text-align: justify;
+}
+
+#resource-list{
+    width: 100%;
+    text-align: center;
+}
+#resource-list #item{
+    display: table-cell;
+    text-align: center;
+}
+#resource-list .item img{
+    display: block;
+    margin: 0 auto;    
+    width: 100px;
+    height: 100px;
+}
+
+section{
+    display: flex;
+    margin: 50px 0;
+    padding: 0 20%;     
+}
+section.noflex{
+    display: block;
+}
+section subsection{
+    display: flex;
+    margin: 25px 0;    
+}
+section text{    
+    flex: 1;
+    display: block;
+    padding: 60px 0;
+}
+section subsection text{
+    padding: 40px 0;
+}
+text.right-pad{
+    padding-right: 60px;
+}
+text.left-pad{
+    padding-left: 60px;
+}
+section h3{
+    font-size: 28px;
+}
+section h2{
+    font-size: 40px;
+}
+section h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+section p, section ul{
+    line-height: 25px;
+    text-align: justify;
+}
+section img.side-image{
+    align-self:center;
+    max-width: 30vw;
+    max-height: 30vw;
+    width: auto;
+    height: auto;    
+}
+
+box{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid black;    
+    width: 80%;
+    padding: 20px;    
+    padding-left: 25px;
+    background-color: white;
+}
+box p{
+    padding-right: 30%;
+}
+
+bin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+bin item{    
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;    
+    padding: 50px 40px;
+    margin: 10px;
+    background: white;
+    transition: all 0.5s;    
+}
+bin item:hover{
+    transform: scale(1.05);    
+}
+
+div#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+div#dialog{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    max-height: 60%;
+    margin: 0 auto;    
+    border-radius: 10px;
+    background: white;
+    padding: 50px 30px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+div#dialog #side-image{
+    float: left;
+    height: 70%;
+    margin-right: 40px;
+}
+div#dialog button{
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    background: rgb(80,100,255);
+    color: white;
+    cursor: pointer;
+}
+
+.blinds-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;    
+    min-height:500px;
+    height:70%;
+}
+.blinds-container .blind{
+    flex-grow: 1;
+    position: relative;
+    padding: 20px;
+    text-align: center;    
+    background-size: cover;
+    transition: 0.5s;
+}
+.blinds-container .blind:hover{
+    flex-grow: 40;    
+    cursor: pointer;
+}
+.blinds-container .blind:nth-child(1){    
+    background-image:url('./images/workshops_blind.png');        
+}
+.blinds-container .blind:nth-child(1):hover{    
+    background-image:url('./images/workshops_blind_hover.png');        
+}
+.blinds-container .blind:nth-child(2){    
+    background-image:url('./images/tools_blind.png');        
+}
+.blinds-container .blind:nth-child(2):hover{    
+    background-image:url('./images/tools_blind_hover.png');        
+}
+.blinds-container .blind:nth-child(3){    
+    background-image:url('./images/mentors_blind.png');        
+}
+.blinds-container .blind:nth-child(3):hover{    
+    background-image:url('./images/mentors_blind_hover.png');        
+}
+
+#calendar-month{
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+}
+#calendar-month h1{
+    font-size: 3em;
+}
+
+#footer{
+    display: none;
+    opacity: 0;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transition: 2s;    
+}
+#footer.main{
+    display: block;
+    opacity: 1;
+}
+#footer div{
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+}
+#footer div img{
+    display: inline;   
+    height: 100%; 
+}
+#footer div p{
+    float: right;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+#footer div a{
+    text-decoration-style: none;
+    color: black;
+}
+
+.data-table td, .data-table th{
+    padding: 10px 20px;
+    margin: 0 auto;
+}
