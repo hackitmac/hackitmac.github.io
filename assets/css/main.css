@@ -2348,6 +2348,14 @@ input, select, textarea {
 				}
 
 			}
+		.symbol {
+			margin-right: 0.65em;
+		}
+
+			.symbol img {
+				display: block;
+				width: 10em;
+			}
 
 /* Table */
 
@@ -2833,6 +2841,15 @@ input, select, textarea {
 			}
 
 				#header .logo .symbol img {
+					display: block;
+					width: 4em;
+				}
+
+			#header .logo .banner {
+				margin-right: 0.65em;
+			}
+
+				#header .logo .banner img {
 					display: block;
 					width: 100%;
 				}
