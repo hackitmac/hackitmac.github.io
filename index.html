@@ -1,102 +1,157 @@
-<html ng-app="PhaseOne">
-<head>
-    <title>PhaseOne</title>
+<!DOCTYPE HTML>
+<!--
+	The PhaseOne website. CC 3.0
+-->
+<html>
+	<head>
+		<title>PhaseOne</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <base href="/"/>
-    <link href="./style.css" rel="stylesheet">
-    <link href="./style.mobile.css" rel="stylesheet">
-    <link rel="icon" href="./images/favicon32.png" sizes="32x32" type="images/png"/>
-    <link rel="icon" href="./images/favicon-256.png" sizes="256x256" type="images/png"/>
-    <link rel="icon" href="./images/faveicon.svg" sizes="any" type="images/svg+xml"/>
-    <link rel="stylesheet"; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
 
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/phaseone-text.png" alt="" /></span>
+								</a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.js"></script>    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
 
-    
-    <script src="./js/main.js"></script>    
-    <script src="./js/slideshow.js"></script>
-    <script src="./js/calendar.js"></script>
-</head>
+						</div>
+					</header>
 
-<body ng-controller="SiteController" ng-data-init="location=''">
-    <background ng-class="state">
-        <table>
-            <tr>
-                <td style="animation-delay: 1s;background-image:url('./images//lp_1.jpg')"></td>
-                <td style="animation-delay: 9.75s;background-image:url('./images//lp_2.jpg')"></td>
-                <td style="animation-delay: 13s;background-image:url('./images//lp_3.jpg')"></td>
-            </tr>
-            <tr>
-                <td style="animation-delay: 6.5s;background-image:url('./images//lp_4.jpg')"></td>
-                <td style="animation-delay: 16.25s;background-image:url('./images//lp_5.jpg')"></td>
-                <td style="animation-delay: 22.75s;background-image:url('./images//lp_6.jpg')"></td>
-            </tr>
-            <tr>
-                <td style="animation-delay: 3.25s;background-image:url('./images//lp_7.jpg')"></td>
-                <td style="animation-delay: 26s;background-image:url('./images//lp_8.jpg')"></td>
-                <td style="animation-delay: 19.5s;background-image:url('./images//lp_9.jpg')"></td>
-            </tr>
-        </table>
-        <div>
-            <img style="animation-delay: 1s; width: 30%;bottom: 20%; left: 0" class="bar" src="./images//bar-0_on_white.svg" />
-            <img style="animation-delay: 6s; width: 18%;right: 20%; top: 10%" class="bar" src="./images//bar-1_on_white.svg" />
-            <img style="animation-delay: 3s; width: 25%;left: 0; top: 0" class="bar" src="./images//bar-2_on_white.svg" />
-            <img style="animation-delay: 2s; width: 25%;bottom: 0; right: 0" class="bar" src="./images//bar-3_on_white.svg" />
-        </div>
-    </background>
-    <content>
-        <!-- NAVIGATION --> 
-        <nav ng-class="state">
-            <img id="logo" src="./images//phaseone-text.png" />
-            <ul>
-                <li ng-click="state='main'"><a href="home" ng-click="navigate(0)"><div>Home</div><div class="under-bar" ></div></a></li>
-                <li ng-click="state='main'"><a href="about" ng-click="navigate(1)"><div>About</div><div class="under-bar"></div></a></li>
-                <li ng-click="state='main'"><a href="resources" ng-click="navigate(2)"><div>Resources</div><div class="under-bar"></div></a></li>
-                <li ng-click="state='main'"><a href="events" ng-click="navigate(3)"><div>Events</div><div class="under-bar"></div></a></li>
-            </ul>
-        </nav>
-        <!-- CONTENT --> 
-        <div class="ng-view"></div>
-        <!-- FOOTER --> 
-        <div id="footer" ng-class="state">
-            <div>
-                <a href="https://www.snapchat.com/add/itsphaseone">
-                    <img src="./images//social/Snapchat-black.svg" />
-                    <p>itsphaseone</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/phaseone_insta">
-                    <img src="./images//social/Instagram-black.svg" />
-                    <p>phaseone_insta</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/Groups/Phase0ne">
-                    <img src="./images//social/Facebook-black.svg" />
-                    <p>/Groups/Phase0ne</p>
-                </a>
-            </div>
-            <div>
-                <a href="https:///www.medium.com/@Phaseone">
-                    <img src="./images//social/Medium-black.svg" />
-                    <p>@Phaseone</p>
-                </a>
-            </div>
-            <div>
-                <a href="mailto:hello@phaseone.io">
-                    <p style="float:none;">hello@phaseone.io</p>
-                </a>
-            </div>
-            <div>                
-                <p style="float:none;">PhaseOne 2017</p>
-            </div>
-        </div>
-    </content>
-</body>
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="team.html">Our Team</a></li>
+							<li><a href="#footer">Contact Us</a></li>
+						</ul>
+					</nav>
 
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Who's PhaseOne?</h1>
+								<p> PhaseOne is McMaster University’s largest technology community with a reach of over fifteen hundred students. Our team strives to make technology education barrier free and provide extracurricular / hands on experience outside of the classroom. PhaseOne’s mission as a student group is to foster and grow the community by providing the necessary resources.</p>
+								<ul class="icons">
+									<li><a href="https://www.facebook.com/groups/phase0ne/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/phaseone_insta" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.medium.com/@Phaseone" class="icon style2 fa-medium"><span class="label">Medium</span></a></li>
+									<li><a href="mailto:hello@phaseone.io" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+									<li><h3>Contact Us!</h3></li>
+								</ul>
+								<p><br>To join the ever-growing PhaseOne community, click on the Facebook link above and join the group!</p>
+							</header>
+							<section class="tiles">
+								<article class="style2">
+									<span class="image">
+										<img src="images/mentors.jpg" alt="" />
+									</span>
+									<a href="#inner">
+										<h2>Mentors</h2>
+										<div class="content">
+											<p>Get help from experienced coders!</p>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/events.jpg" alt="" />
+									</span>
+									<a href="events.html">
+										<h2>Events</h2>
+										<div class="content">
+											<p>Check out all the events on the PhaseOne calendar!</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/tools.jpg" alt="" />
+									</span>
+									<a href="#inner">
+										<h2>Tools</h2>
+										<div class="content">
+											<p>Use our recommended tools!</p>
+										</div>
+									</a>
+								</article>
+							</section>
+							<br><hr>
+							<div class="box alt">
+								<div class="row gtr-uniform">
+									<a href="team.html"><div class="col-12"><span class="image fit"><img src="images/team.jpg" alt="" /></span></div></a>
+								</div>
+							</div>
+							<a href="team.html"><h2>About our team</h2></a>
+							<p>Phase One is composed of students dedicated to our mission: removing the barrier for technological education. The members of each team are chosen based on how their skills and enthusiasm can best be used towards this cause. To find out who we are, click the photo above!</p>
+							 <br>
+							<p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form action="https://formspree.io/hello@phaseone.io" method="post">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.facebook.com/groups/phase0ne/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/phaseone_insta" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.medium.com/@Phaseone" class="icon style2 fa-medium"><span class="label">Medium</span></a></li>
+									<li><a href="mailto:hello@phaseone.io" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; PhaseOne 2018</li><li>Design: <a href="http://www.abhayraj.net">Abhayraj Jain</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
